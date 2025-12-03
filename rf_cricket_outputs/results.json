@@ -1,0 +1,60 @@
+<<<<<<< HEAD
+{
+  "test_accuracy": 0.25,
+  "val_accuracy": 0.4,
+  "per_class_accuracy": {
+    "Loft": 0.0,
+    "Other": 0.0,
+    "backfoot_punch": 0.0,
+    "cover_drive": 0.25,
+    "cut": 0.0,
+    "defensive": 0.75,
+    "pull": 0.5
+  },
+  "n_estimators": 300,
+  "max_depth": 10,
+  "min_samples_split": 2,
+  "total_samples": 99,
+  "num_classes": 7,
+  "num_features": 399,
+  "class_names": [
+    "Loft",
+    "Other",
+    "backfoot_punch",
+    "cover_drive",
+    "cut",
+    "defensive",
+    "pull"
+  ],
+  "min_samples_leaf": 2
+=======
+{
+  "test_accuracy": 0.25,
+  "val_accuracy": 0.4,
+  "per_class_accuracy": {
+    "Loft": 0.0,
+    "Other": 0.0,
+    "backfoot_punch": 0.0,
+    "cover_drive": 0.25,
+    "cut": 0.0,
+    "defensive": 0.75,
+    "pull": 0.5
+  },
+  "n_estimators": 300,
+  "max_depth": 10,
+  "min_samples_split": 2,
+  "total_samples": 99,
+  "num_classes": 7,
+  "num_features": 399,
+  "class_names": [
+    "Loft",
+    "Other",
+    "backfoot_punch",
+    "cover_drive",
+    "cut",
+    "defensive",
+    "pull"
+  ],
+  "min_samples_leaf": 2
+>>>>>>> 55cf882ae12d7b7a383dc56a61ff28ccc63d8322
+}

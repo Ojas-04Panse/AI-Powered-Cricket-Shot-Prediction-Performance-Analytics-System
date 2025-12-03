@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+{
+  "max_depth": 10,
+  "min_samples_leaf": 2,
+  "min_samples_split": 2,
+  "n_estimators": 300
+=======
+{
+  "max_depth": 10,
+  "min_samples_leaf": 2,
+  "min_samples_split": 2,
+  "n_estimators": 300
+>>>>>>> 55cf882ae12d7b7a383dc56a61ff28ccc63d8322
+}
