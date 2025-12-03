@@ -1,104 +1,84 @@
-# AI-Powered-Cricket-Shot-Prediction-Performance-Analytics-System
+# 🏏 AI-Powered Cricket Shot Prediction & Performance Analytics System
 
-# Cricket Highlight Event Detection (Computer Vision + Machine Learning)
-
-## 🏏 Project Overview
-This project focuses on detecting key events in cricket highlight videos — such as boundaries, wickets, and celebrations — using a Machine Learning approach. The dataset was **manually labeled** from YouTube cricket highlight footage.  
-
-We apply **Computer Vision techniques** to extract useful features from frames and then train a **Random Forest classifier** to automatically identify highlight-worthy moments.
+A Computer Vision and Machine Learning based system that classifies cricket shots from video clips, aimed at enabling deeper sports analytics and coaching feedback.
 
 ---
 
-## 🎯 Objective
-- To detect important cricket events automatically from broadcast highlight videos.
-- To build a system capable of supporting sports analytics and automated highlight generation.
+## 📌 Project Overview
+
+- Collected and curated cricket footage from **YouTube highlights**
+- **Manually labeled** each video clip based on the type of batting stroke
+- Extracted motion-based features using **OpenCV** and mathematical logic
+- Trained a **Random Forest Classifier** for robust prediction
+- Developed an interactive dashboard for:
+  - Predicted shot category
+  - Confidence score
+  - Top-3 class probabilities
+  - Video replay and swing-arc visualization
 
 ---
 
-## 📂 Dataset
-- Videos sourced from YouTube cricket highlights.
-- Frames extracted from the videos at regular intervals.
-- Each frame **manually labeled** into event classes:
-  - Boundary
-  - Wicket
-  - Normal Play
-  - Celebration (optional)
+## 🔍 Shot Classes
+
+The following cricket shot types were used for classification:
+
+- Pull
+- Cut
+- Cover Drive
+- Backfoot Punch
+- Defensive
+- Lofted Shot
+- Other / Miscellaneous Shots
 
 ---
 
-## 🧠 Methodology
+## 🛠️ Tech Stack
 
-### 1️⃣ Data Collection
-- Downloaded YouTube cricket highlights.
-- Extracted video frames for analysis.
-
-### 2️⃣ Manual Labeling
-- Each frame was tagged based on visible event:
-  - e.g., "4", "6", "Wicket", or "None"
-
-### 3️⃣ Feature Extraction (Computer Vision)
-- Applied methods like:
-  - Histogram of Oriented Gradients (HOG)
-  - Motion and intensity variation
-  - Visual patterns from scoreboard/players
-
-> These extracted values serve as mathematical features for ML training.
-
-### 4️⃣ Model Training (Machine Learning)
-- Used **Random Forest Classifier**
-- Split into Train/Test datasets
-- Evaluated based on accuracy and performance metrics
+| Role | Technology |
+|------|------------|
+| Machine Learning | Random Forest |
+| Feature Extraction | OpenCV, Motion & Pose Logic |
+| Development | Python |
+| Interface | Custom Dashboard (Video & Probability Insights) |
 
 ---
 
-## 🧪 Tech Stack
-| Component | Tools Used |
-|----------|------------|
-| Programming | Python |
-| CV Techniques | OpenCV |
-| ML Algorithm | Random Forest |
-| Visualization | Matplotlib, Seaborn |
-| Annotation | Manual CSV Labeling |
+## ⚙️ Workflow
+
+1. **Data Collection** – Sourced cricket highlights from YouTube
+2. **Annotation** – Manually labeled each shot clip
+3. **Feature Engineering** – Extracted trajectory, pose transitions, body motion
+4. **Model Training** – Implemented Random Forest model for classification
+5. **Evaluation & Deployment** – Dashboard integrated for user interaction
 
 ---
 
-## 🚀 How It Works
-1. Input: Cricket highlight video
-2. Frames extracted and features generated
-3. Random Forest model predicts event type for each frame
-4. Output: Detected highlight frames + timestamps
+## 📊 Sample Output
 
-This can be extended into automatic highlight video generation.
+> *<img width="2235" height="1397" alt="Screenshot 2025-09-23 133710" src="https://github.com/user-attachments/assets/6f081b2a-5e6e-4ad5-8a6d-60959b6cc3b5" />
+*
+> *<img width="2129" height="1260" alt="Screenshot 2025-09-23 133740" src="https://github.com/user-attachments/assets/525de7e3-f0ff-4516-91d2-fc14dc9d15b6" />
+*
 
----
-
-## 📊 Results
-- The trained model successfully identifies highlight events with promising accuracy.
-- Boundary and wicket events are detected more reliably due to strong visual cues.
-
-(You can add your actual metrics here: Accuracy, Precision, Recall, Confusion Matrix, etc.)
+The dashboard displays:
+- Predicted shot with description
+- Confidence % bar
+- Probability breakdown
+- Bat swing arc and replay visuals
 
 ---
 
-## 🔮 Future Improvements
-- Include audio cues (crowd cheer, commentary spike)
-- Use deep learning (CNN/LSTM) for sequence prediction
-- Automate labeling with weak supervision
-- Detect more advanced cricket actions
+## 🚀 Future Enhancements
+
+- Upgrade classifier to **CNN + LSTM** for sequential video learning
+- Real-time detection from live camera feed
+- Expand dataset with more player scenarios
+- Performance scoring & insight analytics
 
 ---
 
-## 👥 Authors
-- Team Members  
-(Replace with your names)
+## 👤 Author
 
+**Ojas Panse**  
 ---
-
-## 📘 Academic Note
-This project was developed for academic learning and experimentation in:
-- Computer Vision
-- Machine Learning
-- Video Event Detection
-
-Not intended for commercial use.
 
